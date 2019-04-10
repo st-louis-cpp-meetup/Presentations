@@ -1,0 +1,27 @@
+---
+
+Checks: >
+  -clang-analyzer-*,
+  modernize-redundant-void-arg,
+  modernize-use-bool-literals,
+  modernize-use-default-member-init,
+  modernize-use-equals-default,
+  modernize-use-equals-delete,
+  modernize-use-nullptr,
+  modernize-use-override,
+  readability-delete-null-pointer,
+  readability-else-after-return
+
+WarningsAsErrors: ''
+# run-clang-tidy.pl insists on putting ^build_dir in front of this.  So,
+# for now, we just override it on the command-line.  Sigh.
+HeaderFilterRegex: '.*'
+AnalyzeTemporaryDtors: false
+FormatStyle:     file
+CheckOptions:    
+  - key:        modernize-use-default-member-init.UseAssignment
+    value:        '1'
+  - key:        modernize-use-override.IgnoreDestructors
+    value:        '1'
+...
+
