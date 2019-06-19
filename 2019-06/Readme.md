@@ -5,6 +5,6 @@
 
 ---------
 
-[C++20 Ranges.pdf](C++20 Ranges.pdf) - slide deck
+[C++20 Ranges.pdf](C++20%20Ranges.pdf) - slide deck
 
 There are links in the slide deck to saved Compiler Explorer documents.  Versions of the source files are also included in this directory.
