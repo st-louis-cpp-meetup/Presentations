@@ -20,7 +20,6 @@ int main()
 	format_with_error("{:g}", 2);
 	format_with_error("{1}", 1); // bad position
 	format_with_error("{} {}", 1); // bad position
-auto msg = fmt::format("{key2}: {key1}", fmt::arg("key1", 1), fmt::arg("key2", "abc"));
-	cout << msg;
+
 	return 0;
 }
